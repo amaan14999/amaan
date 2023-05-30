@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+* {
+  background-color: #1d1d1f;
+  color: #fff;
+}
+/* Navbar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+.navbar-icon {
+  width: 4rem;
+  height: 4rem;
+}
+.nav-link {
+  color: #fff;
+}
+.nav-item {
+  padding: 0 12px;
+}
+
+.nav-link:hover {
+  background: linear-gradient(to right, #007cf0, #00dfd8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Homepage Section*/
+#home {
+  padding: 1% 7% 15%;
+  font-family: "DM sans";
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.title-row {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.title-heading {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 5%;
+}
+.title-text {
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 3%;
+  font-size: 1.5rem;
+}
+.contact-now {
+  font-weight: 900;
+  transition: all 0.5s ease;
+  border: none;
+  outline: none;
+  color: transparent;
+  cursor: pointer;
+  padding: 0;
+  background: linear-gradient(to right, #007cf0, #00dfd8);
+  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+}
+.fa-solid {
+  color: #00dfd8;
+  margin-left: 8px;
+  transform: rotate(10deg);
+}
+.contact-now:hover {
+  background-color: white;
+  -webkit-text-fill-color: white;
+}
+
+.profile-col {
+  text-align: right;
+}
+.profile-image {
+  width: 60%;
+  border-radius: 50%;
+  margin-top: 20px;
+  box-shadow: 3px;
+}
+
+@media (max-width: 1028px) {
+  .profile-col {
+    text-align: center;
+  }
+}
+
+/* #blob {
+  background-color: white;
+  height: 34vmax;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, aquamarine, mediumpurple);
+  animation: rotate 20s infinite;
+  opacity: 0.8;
+}
+
+#blur {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  backdrop-filter: blur(12vmax);
+} */
