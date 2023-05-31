@@ -31,15 +31,28 @@
   font-weight: 700;
   font-size: 1.25rem;
 }
+
 .title-row {
   justify-content: center;
   align-items: center;
   display: flex;
 }
+/* Image Column */
+.profile-col {
+  text-align: right;
+}
+.profile-image {
+  width: 60%;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Text Column */
 .title-heading {
   font-size: 5rem;
   font-weight: 700;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 .title-text {
   font-weight: 400;
@@ -50,6 +63,7 @@
 .contact-now {
   font-weight: 900;
   transition: all 0.5s ease;
+  text-decoration: none;
   border: none;
   outline: none;
   color: transparent;
@@ -59,7 +73,7 @@
   -webkit-background-clip: text;
   /* -webkit-text-fill-color: transparent; */
 }
-.fa-solid {
+.con-icon {
   color: #00dfd8;
   margin-left: 8px;
   transform: rotate(10deg);
@@ -69,19 +83,18 @@
   -webkit-text-fill-color: white;
 }
 
-.profile-col {
-  text-align: right;
-}
-.profile-image {
-  width: 60%;
-  border-radius: 50%;
-  margin-top: 20px;
-  box-shadow: 3px;
-}
-
 @media (max-width: 1028px) {
   .profile-col {
     text-align: center;
+  }
+  .title-heading {
+    font-size: 4rem;
+  }
+  .title-text {
+    font-size: 1rem;
+  }
+  .contact-now {
+    font-size: 1rem;
   }
 }
 
