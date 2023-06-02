@@ -122,6 +122,23 @@
 .about-link {
   font-weight: 400;
 }
+
+/* Work Section */
+#work {
+  padding: 1% 7% 15%;
+  font-family: "DM sans";
+}
+.work-title {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 3%;
+}
+.work-text {
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 3%;
+  font-size: 1.5rem;
+}
 /* #blob {
   background-color: white;
   height: 34vmax;
