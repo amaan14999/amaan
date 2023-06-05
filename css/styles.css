@@ -328,3 +328,37 @@ a {
   z-index: 2;
   backdrop-filter: blur(12vmax);
 } */
+
+@media (max-width: 426px) {
+  .title-heading,
+  .about-title,
+  .work-title {
+    font-size: 2rem;
+  }
+
+  .title-text,
+  .about-text,
+  .work-text {
+    font-size: 1.1rem;
+  }
+
+  .contact-now {
+    font-size: 1.1rem;
+  }
+  .work-row {
+    margin-bottom: 2rem;
+  }
+
+  .profile-col {
+    margin-bottom: 1.5rem;
+  }
+
+  .title {
+    padding: 0;
+  }
+
+  #work,
+  #about {
+    margin-top: 3rem;
+  }
+}

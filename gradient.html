@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    @keyframes rotation {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    .grad-blob {
+      --size: 250px;
+      --speed: 20s;
+      --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+      width: var(--size);
+      height: var(--size);
+      filter: blur(calc(var(--size) / 7));
+      background-image: linear-gradient(#007cf0, #00dfd8);
+      animation: rotation var(--speed) var(--easing) alternate infinite;
+      border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+      transition: all 0.5s ease-out;
+    }
+    @media (min-width: 720px) {
+      .grad-blob {
+        --size: 500px;
+      }
+    }
+  </style>
+  <body>
+    <div class="grad-blob"></div>
+  </body>
+</html>
