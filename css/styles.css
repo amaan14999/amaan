@@ -329,7 +329,7 @@ a {
   backdrop-filter: blur(12vmax);
 } */
 
-@media (max-width: 435px) {
+@media (max-width: 460px) {
   .title-heading,
   .about-title,
   .work-title {
