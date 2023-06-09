@@ -46,6 +46,10 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.nav-item a:focus {
+  color: #fff;
+}
+
 ::selection {
   background: #00dfd8;
   color: #1d1d1f;
