@@ -58,7 +58,7 @@ a {
 /* Homepage Section*/
 #home {
   padding: 1% 7% 12%;
-  font-family: "DM sans";
+  font-family: "DM sans", sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
 }
@@ -128,7 +128,7 @@ a {
 /* About Section */
 #about {
   padding: 1% 7% 12%;
-  font-family: "DM sans";
+  font-family: "DM sans", sans-serif;
   font-size: 1.25rem;
 }
 .about-title {
@@ -149,7 +149,7 @@ a {
 /* Work Section */
 #work {
   padding: 1% 7% 12%;
-  font-family: "DM sans";
+  font-family: "DM sans", sans-serif;
 }
 .work-title {
   font-size: 5rem;
@@ -274,7 +274,7 @@ a {
   padding: 40px 40px 1px;
   /* align-items: center; */
   /* justify-content: center; */
-  font-family: "DM sans";
+  font-family: "DM sans", sans-serif;
   color: #1d1d1f;
 }
 .social-icons {
