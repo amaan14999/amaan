@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/icon.png" />
+    <link rel="icon" type="image/png" href="assets/Icon3.png" />
     <!-- Bootstrap CSS & JS CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -32,7 +32,7 @@
   <body>
     <div id="blob"></div>
     <div id="blur"></div>
-    <script src="script.js"></script>
+    <script src="blob.js"></script>
     <div id="nav-container">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg">
@@ -198,6 +198,21 @@
       </div>
     </footer>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <!-- <script src="script.js"></script> -->
+    <script>
+      const ename = document.getElementById("name");
+      const email = document.getElementById("email");
+      const message = document.getElementById("message");
+      function sendEmail() {
+        let ebody = `<b>Name:</b> ${ename.value} <br> <b>Email:</b> ${email.value} <br> <b>Message:</b> ${message.value}`;
+
+        Email.send({
+          SecureToken: "0ab09774-3d4a-4b8d-96b6-6b3ff3e51866",
+          To: "amaan14999@gmail.com",
+          From: "amaanlmc@gmail.com",
+          Subject: "NEW MESSAGE FROM " + email.value,
+          Body: ebody,
+        }).then((message) => alert("Sent"));
+      }
+    </script>
   </body>
 </html>
