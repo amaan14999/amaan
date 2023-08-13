@@ -1,16 +1,29 @@
-// const blob = document.getElementById("blob");
+/* -- Glow effect -- */
+const blob = document.getElementById("blob");
 
-// window.onpointermove = (event) => {
-//   const { clientX, clientY } = event;
+window.onpointermove = (event) => {
+  const { clientX, clientY } = event;
 
-//   blob.animate(
-//     {
-//       left: `${clientX}px`,
-//       top: `${clientY}px`,
-//     },
-//     { duration: 3000, fill: "forwards" }
-//   );
-// };
+  blob.animate(
+    {
+      left: `${clientX}px`,
+      top: `${clientY}px`,
+    },
+    { duration: 3000, fill: "forwards" }
+  );
+};
+
+const cards = document.querySelectorAll(".cardw");
+
+cards.forEach((card) => {
+  card.addEventListener("mouseenter", () => {
+    document.getElementById("blob").style.opacity = 0;
+  });
+
+  card.addEventListener("mouseleave", () => {
+    document.getElementById("blob").style.opacity = 0.8;
+  });
+});
 
 const ename = document.getElementById("name");
 const email = document.getElementById("email");

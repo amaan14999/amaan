@@ -323,24 +323,27 @@ a {
 
 #blob {
   background-color: white;
-  height: 34vmax;
+  height: 28vmax;
   aspect-ratio: 1;
-  position: absolute;
+  position: fixed; /* Fix the position */
   left: 50%;
   top: 50%;
-  translate: -50% -50%;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: linear-gradient(to right, aquamarine, mediumpurple);
+  background: linear-gradient(to right, #bd7680, #9dc0a4);
   animation: rotate 20s infinite;
   opacity: 0.8;
+  z-index: -2; /* Negative z-index */
+  transition: opacity 1s ease;
 }
 
 #blur {
   height: 100%;
   width: 100%;
-  position: absolute;
-  z-index: 2;
-  backdrop-filter: blur(12vmax);
+  position: fixed;
+  z-index: -1; /* Above the blob, below other content */
+  backdrop-filter: blur(12vmax); /* Adjust the blur value as needed */
+  background: transparent; /* No need for a background color */
 }
 
 @media (max-width: 460px) {
