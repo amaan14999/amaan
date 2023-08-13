@@ -242,6 +242,7 @@ a {
 .github-container {
   display: flex;
   justify-content: center;
+  gap: 0.625rem;
 }
 .github-button {
   background-color: #1f2020;
