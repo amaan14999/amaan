@@ -1,4 +1,3 @@
-alert("This is an alert box!");
 /* -- Glow effect -- */
 const blob = document.getElementById("blob");
 
