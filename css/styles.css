@@ -343,7 +343,6 @@ a {
   position: fixed;
   z-index: -1; /* Above the blob, below other content */
   backdrop-filter: blur(12vmax); /* Adjust the blur value as needed */
-  background: transparent; /* No need for a background color */
 }
 
 @media (max-width: 460px) {
