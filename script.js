@@ -13,17 +13,17 @@ window.onpointermove = (event) => {
   );
 };
 
-const cards = document.querySelectorAll(".cardw");
+// const cards = document.querySelectorAll(".cardw");
 
-cards.forEach((card) => {
-  card.addEventListener("mouseenter", () => {
-    document.getElementById("blob").style.opacity = 0;
-  });
+// cards.forEach((card) => {
+//   card.addEventListener("mouseenter", () => {
+//     document.getElementById("blob").style.opacity = 0;
+//   });
 
-  card.addEventListener("mouseleave", () => {
-    document.getElementById("blob").style.opacity = 0.8;
-  });
-});
+//   card.addEventListener("mouseleave", () => {
+//     document.getElementById("blob").style.opacity = 0.8;
+//   });
+// });
 
 const ename = document.getElementById("name");
 const email = document.getElementById("email");

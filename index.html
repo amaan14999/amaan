@@ -256,5 +256,17 @@
         </div>
       </div>
     </footer>
+    <script>
+      const cards = document.querySelectorAll(".cardw");
+      cards.forEach((card) => {
+        card.addEventListener("mouseenter", () => {
+          document.getElementById("blob").style.opacity = 0;
+        });
+
+        card.addEventListener("mouseleave", () => {
+          document.getElementById("blob").style.opacity = 0.8;
+        });
+      });
+    </script>
   </body>
 </html>
