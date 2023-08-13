@@ -81,13 +81,14 @@ a {
 
 /* Text Column */
 .title-heading {
-  display: flex;
   font-size: 5rem;
   font-weight: 700;
   margin-bottom: 3%;
+  display: inline-block;
 }
 .hand {
-  width: 11%;
+  width: 5.313rem;
+  display: inline-block;
   margin-top: 0;
   padding-bottom: 1rem;
 }
