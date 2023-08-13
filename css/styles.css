@@ -85,12 +85,12 @@ a {
   font-weight: 700;
   margin-bottom: 3%;
 }
-/* .hand {
+.hand {
   width: 90px;
   display: inline-block;
   margin-top: 0;
   padding-bottom: 1rem;
-} */
+}
 .title-text {
   font-weight: 400;
   line-height: 1.7;
@@ -370,9 +370,9 @@ a {
   .title {
     padding: 0;
   }
-  /* .hand {
+  .hand {
     width: 40px;
-  } */
+  }
   #work,
   #about {
     margin-top: 3rem;
