@@ -84,14 +84,13 @@ a {
   font-size: 5rem;
   font-weight: 700;
   margin-bottom: 3%;
-  display: inline-block;
 }
-.hand {
+/* .hand {
   width: 5.313rem;
   display: inline-block;
   margin-top: 0;
   padding-bottom: 1rem;
-}
+} */
 .title-text {
   font-weight: 400;
   line-height: 1.7;
