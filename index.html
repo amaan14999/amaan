@@ -34,9 +34,49 @@
     <title>Amaan</title>
   </head>
   <body>
-    <div id="blob"></div>
-    <div id="blur"></div>
-    <script src="script.js"></script>
+    <div
+      id="blob"
+      style="
+        background-color: white;
+        height: 28vmax;
+        aspect-ratio: 1;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: linear-gradient(to right, #bd7680, #9dc0a4);
+        animation: rotate 20s infinite;
+        opacity: 0.8;
+        z-index: -2;
+        transition: opacity 1s ease;
+      "
+    ></div>
+    <div
+      id="blur"
+      style="
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: -1;
+        backdrop-filter: blur(12vmax);
+      "
+    ></div>
+    <script>
+      const blob = document.getElementById("blob");
+
+      window.onpointermove = (event) => {
+        const { clientX, clientY } = event;
+
+        blob.animate(
+          {
+            left: `${clientX}px`,
+            top: `${clientY}px`,
+          },
+          { duration: 3000, fill: "forwards" }
+        );
+      };
+    </script>
     <section id="home">
       <div class="container-fluid">
         <!-- Nav Bar -->
