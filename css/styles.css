@@ -10,6 +10,20 @@
   --primary-color: #1b2d7b;
   --gradient: linear-gradient(90deg, #007cf0, #00dfd8, #007cf0, #00dfd8);
 }
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: rgb(113, 113, 113);
+  /* border-radius: 0.5rem; */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00dfd8;
+  /* border-radius: 0.5rem; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00b4ae;
+}
 
 body {
   background-color: #1d1d1f;
@@ -148,10 +162,113 @@ a {
   margin-bottom: 3%;
   font-size: 1.5rem;
 }
-.about-link {
-  font-weight: 400;
-}
 
+#experience {
+  padding: 1% 7% 12%;
+  font-family: "DM sans", sans-serif;
+  font-size: 1.25rem;
+}
+.qualification-title {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 3%;
+}
+.experience-text {
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 5%;
+  font-size: 1.5rem;
+}
+.experience-tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+.experience-button {
+  font-weight: 900;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.experience-button:hover {
+  color: #00dfd8;
+  transition: all 0.5s ease;
+}
+.experience-icon {
+  margin-right: 0.313rem;
+}
+.experience-data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+  position: relative; /* Add this */
+}
+.container {
+  padding: 0 15%;
+}
+.experience-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.experience-subtitle {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 800;
+  /* background: linear-gradient(to right, #007cf0, #00dfd8);
+  -webkit-background-clip: text;
+  color: transparent; */
+  color: #00dfd8;
+}
+.experience-calendar {
+  margin-top: 0.125rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #757575;
+}
+.experience-rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: #00dfd8;
+  border-radius: 50%;
+  position: relative; /* Add this */
+}
+.experience-outline {
+  display: inline-block;
+  width: 20px; /* Adjust as per your requirements */
+  height: 20px; /* Adjust as per your requirements */
+  border: 2px dashed #00dfd8; /* Adjust as per your requirements */
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotateOutline 10s linear infinite;
+}
+@keyframes rotateOutline {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.experience-line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #00dfd8;
+  transform: translate(6px, -10px);
+}
+.experience [data-content] {
+  display: none;
+}
+.experience-active[data-content] {
+  display: block;
+}
+.experience-button.experience-active {
+  color: #00dfd8;
+}
 /* Work Section */
 #work {
   padding: 1% 7% 12%;
@@ -349,16 +466,28 @@ a {
 @media (max-width: 460px) {
   .title-heading,
   .about-title,
-  .work-title {
+  .work-title,
+  .qualification-title {
     font-size: 2rem;
   }
 
   .title-text,
   .about-text,
-  .work-text {
+  .work-text,
+  .experience-text {
     font-size: 1.1rem;
   }
 
+  .experience-button,
+  .experience-title {
+    font-size: 1rem;
+  }
+  .experience-subtitle {
+    font-size: 0.85rem;
+  }
+  .experience-calendar {
+    font-size: 0.75rem;
+  }
   .contact-now {
     font-size: 1.1rem;
   }
@@ -379,5 +508,8 @@ a {
   #work,
   #about {
     margin-top: 3rem;
+  }
+  .container {
+    padding: 0 7%;
   }
 }

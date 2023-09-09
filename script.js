@@ -54,3 +54,19 @@ function sendEmail() {
     Body: ebody,
   }).then((message) => alert("Message Sent 📧"));
 }
+
+const tabs = document.querySelectorAll("[data-target]"),
+  tabContents = document.querySelectorAll("[data-content]");
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = document.querySelector(tab.dataset.target);
+    tabContents.forEach((tabContent) => {
+      tabContent.classList.remove("experience-active");
+    });
+    target.classList.add("experience-active");
+    tabs.forEach((tab) => {
+      tab.classList.remove("experience-active");
+    });
+    tab.classList.add("experience-active");
+  });
+});
