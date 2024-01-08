@@ -202,8 +202,8 @@ a {
   column-gap: 1.5rem;
   position: relative; /* Add this */
 }
-.container {
-  padding: 0 15%;
+.experience-container {
+  padding: 0 25%;
 }
 .experience-title {
   font-size: 1.25rem;
