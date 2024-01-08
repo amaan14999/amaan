@@ -28,6 +28,12 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Swiper CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
 
@@ -310,7 +316,7 @@
     <section id="work">
       <h1 class="work-title">My Work</h1>
       <p class="work-text">Here's what I have been working on lately.....</p>
-      <!-- <div class="work-row row">
+      <div class="work-row row">
         <div class="col-lg-4 d-flex justify-content-center">
           <div class="cardw justify-content-center">
             <div class="card-container">
@@ -384,278 +390,6 @@
             </div>
           </div>
         </div>
-      </div> -->
-
-      <!-- Work Section -->
-
-      <!-- Bootstrap Carousel -->
-      <div id="workCarousel" class="carousel slide" data-bs-ride="carousel">
-        <!-- Carousel Indicators -->
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#workCarousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#workCarousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <!-- Add more buttons if you have more slides -->
-        </div>
-
-        <!-- Carousel Inner -->
-        <div class="carousel-inner">
-          <!-- First Slide -->
-          <div class="carousel-item active">
-            <div class="work-row row">
-              <!-- Your existing work-row content for the first slide -->
-              <div class="col-lg-4 d-flex justify-content-center">
-                <div class="cardw justify-content-center">
-                  <div class="card-container">
-                    <h2 class="card-title">Querty</h2>
-                    <img
-                      src="assets/Querty.png"
-                      alt="Querty"
-                      width="100%"
-                      class="card-image"
-                    />
-                    <div class="tag-container">
-                      <div class="tag">ReactJS</div>
-                    </div>
-                    <p>
-                      Query, Create, Conquer: Your SQL Journey Begins Here.
-                      Fast, Friendly, and Foolproof!
-                    </p>
-                    <div class="github-container">
-                      <a
-                        target="_blank"
-                        href="https://github.com/amaan14999/atlan-sql-editor"
-                      >
-                        <div class="github-button">
-                          <i class="fa-brands fa-github fa-gradient"></i></div
-                      ></a>
-                      <a
-                        target="_blank"
-                        href="https://atlan-sql-editor.pages.dev/"
-                      >
-                        <div class="github-button">
-                          <i
-                            class="fa-gradient fa-solid fa-up-right-from-square"
-                            style="font-size: 18px"
-                          ></i></div
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 d-flex justify-content-center">
-                <div class="cardw justify-content-center">
-                  <div class="card-container">
-                    <h2 class="card-title">ResumeHub</h2>
-                    <img
-                      src="assets/ResumeHub.png"
-                      alt="ResumeHub"
-                      width="100%"
-                      class="card-image"
-                    />
-                    <div class="tag-container">
-                      <div class="tag">OpenAI GPT</div>
-                      <div class="tag">ReactJS</div>
-                      <div class="tag">Python</div>
-                    </div>
-                    <p>
-                      Enhance job applications with this app: Quick and smart
-                      resume tools.
-                    </p>
-                    <div class="github-container">
-                      <a
-                        target="_blank"
-                        href="https://github.com/amaan14999/ResumeHub"
-                      >
-                        <div class="github-button">
-                          <i class="fa-brands fa-github fa-gradient"></i></div
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 d-flex justify-content-center">
-                <div class="cardw justify-content-center">
-                  <div class="card-container">
-                    <h2 class="card-title">Tinyr</h2>
-                    <img
-                      src="assets/Tinyr.png"
-                      alt="Tinyr"
-                      width="100%"
-                      class="card-image"
-                    />
-                    <div class="tag-container">
-                      <div class="tag">JavaScript</div>
-                      <div class="tag">MySQL</div>
-                    </div>
-                    <p>
-                      Condense long web addresses into sleek, shareable links
-                      with this powerful URL shortener.
-                    </p>
-                    <div class="github-container">
-                      <a
-                        target="_blank"
-                        href="https://github.com/amaan14999/tinyr"
-                      >
-                        <div class="github-button">
-                          <i class="fa-brands fa-github fa-gradient"></i></div
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Second Slide -->
-          <div class="carousel-item">
-            <div class="work-row row">
-              <!-- Your content for the second slide -->
-              <div class="col-lg-4 d-flex justify-content-center">
-                <div class="cardw justify-content-center">
-                  <div class="card-container">
-                    <h2 class="card-title">Hedwig</h2>
-                    <img
-                      src="assets/Hedwig.png"
-                      alt="Hedwig"
-                      width="100%"
-                      class="card-image"
-                    />
-                    <div class="tag-container">
-                      <div class="tag">Socket.IO</div>
-                      <div class="tag">JavaScript</div>
-                    </div>
-                    <p>
-                      Transfer files effortlessly with this web application -
-                      fast, secure, and simple.
-                    </p>
-                    <div class="github-container">
-                      <a
-                        target="_blank"
-                        href="https://github.com/amaan14999/Hedwig"
-                      >
-                        <div class="github-button">
-                          <i class="fa-brands fa-github fa-gradient"></i></div
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 d-flex justify-content-center">
-                <div class="cardw justify-content-center">
-                  <div class="card-container">
-                    <h2 class="card-title">CodeBox</h2>
-                    <img
-                      src="assets/CodeBox.png"
-                      alt="CodeBox"
-                      width="100%"
-                      class="card-image"
-                    />
-                    <div class="tag-container">
-                      <div class="tag">HTML</div>
-                      <div class="tag">CSS</div>
-                      <div class="tag">JavaScript</div>
-                    </div>
-                    <p>
-                      Streamline your coding workflow with our intuitive,
-                      real-time live code editor.
-                    </p>
-                    <div class="github-container">
-                      <a
-                        target="_blank"
-                        href="https://github.com/amaan14999/CodeBox"
-                      >
-                        <div class="github-button">
-                          <i class="fa-brands fa-github fa-gradient"></i></div
-                      ></a>
-                      <a target="_blank" href="https://codebox.itsamaan.me/">
-                        <div class="github-button">
-                          <i
-                            class="fa-gradient fa-solid fa-up-right-from-square"
-                            style="font-size: 18px"
-                          ></i></div
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 d-flex justify-content-center">
-                <div class="cardw justify-content-center">
-                  <div class="card-container">
-                    <h2 class="card-title">GPATool</h2>
-                    <img
-                      src="assets/GPATool.png"
-                      alt="GPATool"
-                      width="100%"
-                      class="card-image"
-                    />
-                    <div class="tag-container">
-                      <div class="tag">HTML</div>
-                      <div class="tag">CSS</div>
-                      <div class="tag">JavaScript</div>
-                    </div>
-                    <p>
-                      Boost your academic planning with our user-friendly GPA
-                      calculator for accurate SGPA tracking.
-                    </p>
-                    <div class="github-container">
-                      <a
-                        target="_blank"
-                        href="https://github.com/amaan14999/GPAtool"
-                      >
-                        <div class="github-button">
-                          <i class="fa-brands fa-github fa-gradient"></i></div
-                      ></a>
-                      <a target="_blank" href="https://gpatool.itsamaan.me">
-                        <div class="github-button">
-                          <i
-                            class="fa-gradient fa-solid fa-up-right-from-square"
-                            style="font-size: 18px"
-                          ></i></div
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Add more carousel-item divs for additional slides -->
-        </div>
-
-        <!-- Carousel Controls -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#workCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#workCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
 
       <a
@@ -667,6 +401,7 @@
         <i class="fa-solid fa-link"></i>
       </a>
     </section>
+
     <footer id="footer">
       <div class="footer-container">
         <div>
@@ -692,6 +427,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       const cards = document.querySelectorAll(".cardw");
       cards.forEach((card) => {
