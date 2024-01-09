@@ -104,12 +104,16 @@ const swiper = new Swiper(".swiper-slider", {
 
   // Responsive breakpoints
   breakpoints: {
+    580: {
+      slidesPerView: 1.5,
+      spaceBetween: 20,
+    },
     640: {
-      slidesPerView: 1.25,
+      slidesPerView: 1.5,
       spaceBetween: 20,
     },
     1024: {
-      slidesPerView: 2,
+      slidesPerView: 2.5,
       spaceBetween: 20,
     },
   },

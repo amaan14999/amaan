@@ -287,8 +287,8 @@ a {
 }
 
 .cardw {
-  width: 450px;
-
+  width: 90%;
+  overflow: hidden;
   padding: 40px 35px;
   border-radius: 16px;
   color: #fff;
@@ -323,6 +323,9 @@ a {
 }
 .cardw:hover::after {
   opacity: 100%;
+}
+.swiper-slide {
+  overflow: visible;
 }
 
 @keyframes rotate {
@@ -437,6 +440,37 @@ a {
   font-size: 3rem;
   color: #1d1d1f;
 }
+
+.swiper {
+  margin-bottom: 1.5rem;
+  border-radius: 20px;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 1rem;
+  width: 2rem;
+  height: 2rem;
+  opacity: 0.9;
+  border-radius: 50%;
+  color: #fff;
+  background: #1d1d1f;
+}
+.swiper-slider .swiper-pagination-bullet {
+  margin-top: 1rem !important;
+  background-color: #00dfd8;
+}
+
 @media (max-width: 640px) {
   .footer-container {
     display: flex;
