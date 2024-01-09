@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="assets/Icon3.png" rel="icon" type="image/png" />
+    <!-- Bootstrap CSS & JS CDN -->
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      rel="stylesheet"
+    />
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <!-- Fontawesome CDN -->
+    <link
+      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      referrerpolicy="no-referrer"
+      rel="stylesheet"
+    />
+    <!-- Swiper CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <title>Amaan</title>
+  </head>
+  <body>
+    <div
+      id="blob"
+      style="
+        background-color: white;
+        height: 28vmax;
+        aspect-ratio: 1;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: linear-gradient(to right, #bd7680, #9dc0a4);
+        animation: rotate 20s infinite;
+        opacity: 0.8;
+        z-index: -2;
+        transition: opacity 1s ease;
+      "
+    ></div>
+    <div
+      id="blur"
+      style="
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: -1;
+        backdrop-filter: blur(12vmax);
+      "
+    ></div>
+    <script>
+      const blob = document.getElementById("blob");
+
+      window.onpointermove = (event) => {
+        const { clientX, clientY } = event;
+
+        blob.animate(
+          {
+            left: `${clientX}px`,
+            top: `${clientY}px`,
+          },
+          { duration: 3000, fill: "forwards" }
+        );
+      };
+    </script>
+    <section id="home">
+      <div class="container-fluid">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="https://itsamaan.me/"
+            ><img
+              alt=""
+              class="navbar-icon"
+              src="https://res.cloudinary.com/dheafelse/image/upload/q_auto/w_auto/v1704791008/es3dcrsnbjplzafcsefp.webp"
+          /></a>
+          <button
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler"
+            data-bs-target="#navbarSupportedContent"
+            data-bs-toggle="collapse"
+            type="button"
+          >
+            <span class="navbar-toggler-icon"
+              ><i class="fa-solid fa-bars"></i
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="https://itsamaan.me/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://itsamaan.me/#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://itsamaan.me/#work">Work</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://resume.itsamaan.me/"
+                  target="_blank"
+                  >Resume</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Title -->
+        <div class="title-row row">
+          <div class="profile-col col-lg-6 order-lg-2">
+            <!-- <div class="grad-blob"></div> -->
+            <img
+              alt="profile-photo"
+              class="profile-image"
+              src="https://res.cloudinary.com/dheafelse/image/upload/q_auto/w_auto/v1704791011/q299rigjshqpdiqheyra.webp"
+            />
+          </div>
+          <div class="title col-lg-6 order-lg-1">
+            <h1 class="title-heading">
+              Hi, I am Amaan.
+              <img
+                alt=""
+                class="hand"
+                src="https://em-content.zobj.net/source/animated-noto-color-emoji/356/waving-hand_light-skin-tone_1f44b-1f3fb_1f3fb.gif"
+              />
+            </h1>
+            <p class="title-text">
+              I am a passionate computer science geek 💻 committed to crafting
+              remarkable websites with a focus on speed, accessibility, and
+              overall awesomeness✨.
+            </p>
+            <a class="contact-now" href="mailto:amaan14999@gmail.com">
+              Contact Now
+              <i class="con-icon fas fa-paper-plane"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h1 class="about-title">Get to Know Me!</h1>
+      <div class="about-text">
+        <p>
+          Hi there, I'm Amaan, a Full Stack Developer and an undergraduate from
+          <a class="about-link" href="https://snu.edu.in/home" target="_blank"
+            >Shiv Nadar University</a
+          >. My command over Java is strong, and I am currently traversing the
+          vast terrain of Cloud Computing - an exciting journey, I must say.
+        </p>
+        <p>
+          I'm also passionate about Cyber Security and believe it should be a
+          top priority for every developer. I'm always seeking out new ways to
+          improve my skills in this area.
+        </p>
+        <p>
+          Besides coding and, I'm a passionate photographer of over 8 years. I
+          love capturing the beauty of the world around me. Take a look at some
+          of
+          <a
+            class="about-link"
+            href="https://www.instagram.com/_thelenses_/"
+            target="_blank"
+            >my photography work</a
+          >
+          and share any feedback or suggestions you have.
+        </p>
+        <p>
+          When I'm not behind the camera, I indulge in reading, anime, and
+          binge-watching TV series.
+        </p>
+      </div>
+      <a class="contact-now" href="https://t.me/amaan14999" target="_blank">
+        Chat With Me
+        <i class="chat-icon fa-solid fa-comment-dots"></i>
+      </a>
+    </section>
+    <section class="experience" id="experience">
+      <h1 class="qualification-title">Experience</h1>
+      <p class="experience-text">My Journey so far....</p>
+      <div class="experience-container container">
+        <div class="experience-tabs">
+          <div
+            class="experience-button button--flex experience-active"
+            data-target="#education"
+          >
+            <i class="fa-solid fa-graduation-cap experience-icon"></i>
+            Education
+          </div>
+          <div
+            class="experience-button button--flex"
+            data-target="#work-proffession"
+          >
+            <i class="fa-solid fa-briefcase experience-icon"></i>
+            Work
+          </div>
+        </div>
+        <div class="experience-sections">
+          <!-- Education Section -->
+          <div
+            class="experience-content experience-active"
+            data-content=""
+            id="education"
+          >
+            <div class="experience-data">
+              <div>
+                <h3 class="experience-title">
+                  Bachelor of Technology in <br />
+                  Computer Science Engineering
+                </h3>
+                <span class="experience-subtitle"
+                  ><em>Shiv Nadar University</em>
+                </span>
+                <div class="experience-calendar">
+                  <i class="fa-solid fa-calendar-week"></i>
+                  <em>2020 - Present</em>
+                </div>
+              </div>
+              <div>
+                <span class="experience-rounder"
+                  ><div class="experience-outline"></div
+                ></span>
+                <span class="experience-line"></span>
+              </div>
+            </div>
+            <div class="experience-data">
+              <div></div>
+              <div>
+                <span class="experience-rounder"></span>
+                <!-- <span class="experience-line"></span> -->
+              </div>
+              <div>
+                <h3 class="experience-title">Higher Secondary Education</h3>
+                <span class="experience-subtitle"
+                  ><em>La Martiniere College</em></span
+                >
+                <div class="experience-calendar">
+                  <i class="fa-solid fa-calendar-week"></i>
+                  <em>2018 - 2019</em>
+                </div>
+              </div>
+              <!-- <div>
+                <span class="experience-rounder"></span>
+                <span class="experience-line"></span>
+              </div> -->
+            </div>
+          </div>
+          <!-- -->
+          <div class="experience-content" data-content="" id="work-proffession">
+            <!-- New Experience -->
+            <div class="experience-data">
+              <div>
+                <h3 class="experience-title">Frontend Developer Intern</h3>
+                <span class="experience-subtitle"
+                  ><em>HappyFox Technologies LLP</em></span
+                >
+                <div class="experience-calendar">
+                  <i class="fa-solid fa-calendar-week"></i>
+                  <em>Jan 2024 - Present</em>
+                </div>
+              </div>
+              <div>
+                <span class="experience-rounder"
+                  ><div class="experience-outline"></div
+                ></span>
+                <span class="experience-line"></span>
+              </div>
+            </div>
+            <!-- Celebal Technologies Experience -->
+            <div class="experience-data">
+              <div></div>
+              <div>
+                <span class="experience-rounder"></span>
+                <span class="experience-line"></span>
+              </div>
+              <div>
+                <h3 class="experience-title">Frontend Developer Intern</h3>
+                <span class="experience-subtitle"
+                  ><em>Celebal Technologies</em></span
+                >
+                <div class="experience-calendar">
+                  <i class="fa-solid fa-calendar-week"></i>
+                  <em>May 2023 - Jul 2023</em>
+                </div>
+              </div>
+            </div>
+            <!-- Muddie Trails Experience -->
+            <div class="experience-data">
+              <div>
+                <h3 class="experience-title">Web Developer Intern</h3>
+                <span class="experience-subtitle"><em>Muddie Trails</em></span>
+                <div class="experience-calendar">
+                  <i class="fa-solid fa-calendar-week"></i>
+                  <em>2021 - 2022</em>
+                </div>
+              </div>
+              <div>
+                <span class="experience-rounder"></span>
+                <!-- <span class="experience-line"></span> -->
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="work">
+      <h1 class="work-title">My Work</h1>
+      <p class="work-text">Here's what I have been working on lately.....</p>
+      <div class="swiper swiper-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="cardw justify-content-center">
+              <div class="card-container">
+                <h2 class="card-title">Hedwig</h2>
+                <img
+                  alt="Hedwig"
+                  class="card-image"
+                  src="https://res.cloudinary.com/dheafelse/image/upload/q_auto/w_auto/v1704791014/kmxv2k3oj53tiseztiib.webp"
+                />
+                <div class="tag-container">
+                  <div class="tag">Socket.IO</div>
+                  <div class="tag">JavaScript</div>
+                </div>
+                <p>
+                  Transfer files effortlessly with this web application - fast,
+                  secure, and simple.
+                </p>
+                <div class="github-container">
+                  <a
+                    href="https ://github.com/amaan14999/Hedwig"
+                    target="_blank"
+                  >
+                    <div class="github-button">
+                      <i class="fa-brands fa-github fa-gradient"></i></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cardw justify-content-center">
+              <div class="card-container">
+                <h2 class="card-title">Tinyr</h2>
+                <img
+                  alt="Tinyr"
+                  class="card-image"
+                  src="https://res.cloudinary.com/dheafelse/image/upload/q_auto/w_auto/v1704791015/ahkyir09ngioza6qehlh.webp"
+                />
+                <div class="tag-container">
+                  <div class="tag">JavaScript</div>
+                  <div class="tag">MySQL</div>
+                </div>
+                <p>
+                  Condense long web addresses into sleek, shareable links with
+                  this powerful URL shortener.
+                </p>
+                <div class="github-container">
+                  <a href="https://github.com/amaan14999/tinyr" target="_blank">
+                    <div class="github-button">
+                      <i class="fa-brands fa-github fa-gradient"></i></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cardw justify-content-center">
+              <div class="card-container">
+                <h2 class="card-title">Querty</h2>
+                <img
+                  alt="Querty"
+                  class="card-image"
+                  src="https://res.cloudinary.com/dheafelse/image/upload/q_auto/w_auto/v1704791017/mlyhawoasz1oscqtf4wd.webp"
+                />
+                <div class="tag-container">
+                  <div class="tag">ReactJS</div>
+                </div>
+                <p>
+                  Query, Create, Conquer: Your SQL Journey Begins Here. Fast,
+                  Friendly, and Foolproof!
+                </p>
+                <div class="github-container">
+                  <a
+                    href="https://github.com/amaan14999/atlan-sql-editor"
+                    target="_blank"
+                  >
+                    <div class="github-button">
+                      <i class="fa-brands fa-github fa-gradient"></i></div
+                  ></a>
+                  <a href="https://atlan-sql-editor.pages.dev/" target="_blank">
+                    <div class="github-button">
+                      <i
+                        class="fa-gradient fa-solid fa-up-right-from-square"
+                        style="font-size: 18px"
+                      ></i></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cardw justify-content-center">
+              <div class="card-container">
+                <h2 class="card-title">ResumeHub</h2>
+                <img
+                  alt="ResumeHub"
+                  class="card-image"
+                  src="https://res.cloudinary.com/dheafelse/image/upload/q_auto/w_auto/v1704791018/mivpztxwidzadubcke3l.webp"
+                />
+                <div class="tag-container">
+                  <div class="tag">OpenAI-GPT</div>
+                  <div class="tag">ReactJS</div>
+                  <div class="tag">Python</div>
+                </div>
+                <p>
+                  Enhance job applications with our app: Quick ATS scoring and
+                  smart resume tools.
+                </p>
+                <div class="github-container">
+                  <a
+                    href="https://github.com/amaan14999/ResumeHub"
+                    target="_blank"
+                  >
+                    <div class="github-button">
+                      <i class="fa-brands fa-github fa-gradient"></i></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cardw justify-content-center">
+              <div class="card-container">
+                <h2 class="card-title">CodeBox</h2>
+                <img
+                  alt="CodeBox"
+                  class="card-image"
+                  src="https://res.cloudinary.com/dheafelse/image/upload/q_auto/w_auto/v1704791019/dd5aslmrgn4djciylalp.webp"
+                />
+                <div class="tag-container">
+                  <div class="tag">JavaScript</div>
+                  <div class="tag">HTML</div>
+                  <div class="tag">CSS</div>
+                </div>
+                <p>
+                  Streamline your coding workflow with our intuitive, real-time
+                  live code editor.
+                </p>
+                <div class="github-container">
+                  <a
+                    href="https://github.com/amaan14999/CodeBox"
+                    target="_blank"
+                  >
+                    <div class="github-button">
+                      <i class="fa-brands fa-github fa-gradient"></i></div
+                  ></a>
+                  <a href="https://codebox.itsamaan.me/" target="_blank">
+                    <div class="github-button">
+                      <i
+                        class="fa-gradient fa-solid fa-up-right-from-square"
+                        style="font-size: 18px"
+                      ></i></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cardw justify-content-center">
+              <div class="card-container">
+                <h2 class="card-title">GPATool</h2>
+                <img
+                  alt="GPATool"
+                  class="card-image"
+                  src="https://res.cloudinary.com/dheafelse/image/upload/q_auto/w_auto/v1704791023/gkevdgmnndznsfy3mjex.webp"
+                />
+                <div class="tag-container">
+                  <div class="tag">JavaScript</div>
+                  <div class="tag">HTML</div>
+                  <div class="tag">CSS</div>
+                </div>
+                <p>
+                  Boost your academic planning with our user-friendly GPA
+                  calculator for accurate SGPA tracking.
+                </p>
+                <div class="github-container">
+                  <a
+                    href="https://github.com/amaan14999/GPAtool"
+                    target="_blank"
+                  >
+                    <div class="github-button">
+                      <i class="fa-brands fa-github fa-gradient"></i></div
+                  ></a>
+                  <a href="https://gpatool.itsamaan.me/" target="_blank">
+                    <div class="github-button">
+                      <i
+                        class="fa-gradient fa-solid fa-up-right-from-square"
+                        style="font-size: 18px"
+                      ></i></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cardw justify-content-center">
+              <div class="card-container">
+                <h2 class="card-title">StockAvg</h2>
+                <img
+                  alt="StockAvg"
+                  class="card-image"
+                  src="https://res.cloudinary.com/dheafelse/image/upload/q_auto/w_auto/v1704791026/s3ihobfzryhp72yrabn7.webp"
+                />
+                <div class="tag-container">
+                  <div class="tag">JavaScript</div>
+                  <div class="tag">HTML</div>
+                  <div class="tag">CSS</div>
+                </div>
+                <p>
+                  Maximize your stock portfolio with this app: Easily calculate
+                  shares for your desired average price.
+                </p>
+                <div class="github-container">
+                  <a
+                    href="https://github.com/amaan14999/StockAvg"
+                    target="_blank"
+                  >
+                    <div class="github-button">
+                      <i class="fa-brands fa-github fa-gradient"></i></div
+                  ></a>
+                  <a href="https://stockavg.itsamaan.me/" target="_blank">
+                    <div class="github-button">
+                      <i
+                        class="fa-gradient fa-solid fa-up-right-from-square"
+                        style="font-size: 18px"
+                      ></i></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="swiper-pagination"></span>
+        <span class="swiper-button-prev"></span>
+        <span class="swiper-button-next"></span>
+      </div>
+      <!-- <div class="work-row row">
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="cardw justify-content-center">
+            <div class="card-container">
+              <h2 class="card-title">Hedwig</h2>
+              <div class="tag-container">
+                <div class="tag">Socket.IO</div>
+                <div class="tag">JavaScript</div>
+              </div>
+              <p>
+                Transfer files effortlessly with this web application - fast,
+                secure, and simple.
+              </p>
+              <div class="github-container">
+                <a target="_blank" href="https://github.com/amaan14999/Hedwig">
+                  <div class="github-button">
+                    <i class="fa-brands fa-github fa-gradient"></i></div
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="cardw justify-content-center">
+            <div class="card-container">
+              <h2 class="card-title">Tinyr</h2>
+              <div class="tag-container">
+                <div class="tag">JavaScript</div>
+                <div class="tag">MySQL</div>
+              </div>
+              <p>
+                Condense long web addresses into sleek, shareable links with
+                this powerful URL shortener.
+              </p>
+              <div class="github-container">
+                <a target="_blank" href="https://github.com/amaan14999/tinyr">
+                  <div class="github-button">
+                    <i class="fa-brands fa-github fa-gradient"></i></div
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="cardw justify-content-center">
+            <div class="card-container">
+              <h2 class="card-title">Querty</h2>
+              <div class="tag-container">
+                <div class="tag">ReactJS</div>
+              </div>
+              <p>
+                Query, Create, Conquer: Your SQL Journey Begins Here. Fast,
+                Friendly, and Foolproof!
+              </p>
+              <div class="github-container">
+                <a
+                  target="_blank"
+                  href="https://github.com/amaan14999/atlan-sql-editor"
+                >
+                  <div class="github-button">
+                    <i class="fa-brands fa-github fa-gradient"></i></div
+                ></a>
+                <a target="_blank" href="https://atlan-sql-editor.pages.dev/">
+                  <div class="github-button">
+                    <i
+                      class="fa-gradient fa-solid fa-up-right-from-square"
+                      style="font-size: 18px"
+                    ></i></div
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <a
+        class="know-more contact-now"
+        href="https://github.com/amaan14999"
+        target="_blank"
+      >
+        Know More
+        <i class="fa-solid fa-link"></i>
+      </a>
+    </section>
+    <footer id="footer">
+      <div class="footer-container">
+        <div>
+          <a href="https://itsamaan.me/">
+            <h1 class="footer-title">amaan.</h1></a
+          >
+          <p class="copyright">© 2023 Amaan</p>
+        </div>
+        <div class="social-icons">
+          <a href="https://twitter.com/not_iitian" target="_blank"
+            ><i class="foi fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://github.com/amaan14999" target="_blank"
+            ><i class="foi fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/amaan14999/" target="_blank"
+            ><i class="foi fa-brands fa-linkedin"></i
+          ></a>
+          <a href="mailto:amaan14999@gmail.com" target="_blank"
+            ><i class="foi fa-solid fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const cards = document.querySelectorAll(".cardw");
+      cards.forEach((card) => {
+        card.addEventListener("mouseenter", () => {
+          document.getElementById("blob").style.opacity = 0;
+        });
+
+        card.addEventListener("mouseleave", () => {
+          document.getElementById("blob").style.opacity = 0.8;
+        });
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
