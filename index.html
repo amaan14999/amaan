@@ -71,17 +71,27 @@
     <script>
       const blob = document.getElementById("blob");
 
-      window.onpointermove = (event) => {
-        const { clientX, clientY } = event;
+      // Function to detect Apple devices
+      function isAppleDevice() {
+        return /Mac|iPod|iPhone|iPad/.test(navigator.platform);
+      }
 
-        blob.animate(
-          {
-            left: `${clientX}px`,
-            top: `${clientY}px`,
-          },
-          { duration: 3000, fill: "forwards" }
-        );
-      };
+      if (!isAppleDevice()) {
+        window.onpointermove = (event) => {
+          const { clientX, clientY } = event;
+
+          blob.animate(
+            {
+              left: `${clientX}px`,
+              top: `${clientY}px`,
+            },
+            { duration: 3000, fill: "forwards" }
+          );
+        };
+      } else {
+        // Hide the blob or disable its functionality for Apple devices
+        blob.style.display = "none"; // This line hides the blob
+      }
     </script>
     <section id="home">
       <div class="container-fluid">
@@ -135,7 +145,7 @@
             <!-- <div class="grad-blob"></div> -->
             <img
               class="profile-image"
-              src="assets/DSC_0027-3.jpg"
+              src="assets/avatar.jpg"
               alt="profile-photo"
             />
           </div>
@@ -673,7 +683,7 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
+    <!-- <script>
       const cards = document.querySelectorAll(".cardw");
       cards.forEach((card) => {
         card.addEventListener("mouseenter", () => {
@@ -684,7 +694,7 @@
           document.getElementById("blob").style.opacity = 0.8;
         });
       });
-    </script>
+    </script> -->
     <script src="script.js"></script>
   </body>
 </html>
