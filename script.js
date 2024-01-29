@@ -76,7 +76,7 @@ const swiper = new Swiper(".swiper-slider", {
   centeredSlides: true,
   slidesPerView: 1,
   grabCursor: true,
-  freeMode: false,
+  freeMode: true,
   loop: true,
   mousewheel: {
     forceToAxis: true,
@@ -88,7 +88,7 @@ const swiper = new Swiper(".swiper-slider", {
   // Enabled autoplay mode
   autoplay: {
     delay: 5000,
-    disableOnInteraction: true,
+    disableOnInteraction: false,
   },
 
   // If we need pagination
